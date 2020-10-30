@@ -1,26 +1,12 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
-
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+import './styles.css'
+export default class App extends React.Component {
+  render() {
+    return (
+      <div style={{ display: "flex", justifyContent: "center", alignItems: "center", height: "90vh", flexDirection: 'column'}}>
+        <h2 style={{ fontWeight: "bold", color: "gray" }}>Hello, thank you for interesting</h2>
+        <h3 style={{ fontWeight: "bold", color: "gray"}}>Currently we are not life yet</h3>
+      </div>
+    )
+  }
 }
-
-export default App;
